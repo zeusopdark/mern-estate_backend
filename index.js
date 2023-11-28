@@ -8,7 +8,12 @@ import listingRouter from "./routes/listing.route.js"
 import cookieParser from "cookie-parser";
 dotenv.config();
 const app = express();
-app.use(cors())
+const corsOptions = {
+    origin: "https://mern-estate-rd6j.onrender.com",
+    credentials: true,
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(cookieParser());
 
