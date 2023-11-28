@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "project deployement",
+    "name": "project-deployment",
     "builds": [
         {
             "src": "index.js",
@@ -10,7 +10,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/inddex.js"
+            "dest": "/index.js"
         }
     ]
 }
